@@ -1,6 +1,5 @@
-let data = 12;
-const getData = (data) => {
-    console.log(getData)
-
+function getWarriorData() {
+    return "Warriors Stats Coming...";
 }
-getData(data);
+
+export default getWarriorData;
