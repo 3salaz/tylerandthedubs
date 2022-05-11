@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "name": "tylerandthedubs",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+  },
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3salaz/tylerandthedubs.git"
+  },
+  "author": "3salaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3salaz/tylerandthedubs/issues"
+  },
+  "homepage": "https://github.com/3salaz/tylerandthedubs#readme",
+  "description": ""
+}
