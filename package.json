@@ -6,8 +6,6 @@
   "name": "tylerandthedubs",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-  },
   "scripts": {
     "build": "webpack --mode production"
   },
@@ -21,5 +19,8 @@
     "url": "https://github.com/3salaz/tylerandthedubs/issues"
   },
   "homepage": "https://github.com/3salaz/tylerandthedubs#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "firebase": "^9.8.1"
+  }
 }
