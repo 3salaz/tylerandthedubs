@@ -1,9 +1,16 @@
-import getWarriorData from './getData';
+// userScripts
+import consoleTest from './consoleTest';
+// testingFirebase
 import { initializeApp } from "firebase/app";
-
+// sassStyles
+import './style/master.scss';
+// import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
-// Your web app's Firebase configuration
 
+
+
+
+// Setup Keys
 const firebaseConfig = {
   apiKey: "AIzaSyD6MdFrc3dMZd_gocFnT6_c06kDuYmhOd0",
   authDomain: "nativefanatics.firebaseapp.com",
@@ -13,7 +20,7 @@ const firebaseConfig = {
   appId: "1:606356471271:web:6c42fd5afa872529295142"
 };
 
+console.log(consoleTest('word'));
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log(getWarriorData());
-console.log(app);
