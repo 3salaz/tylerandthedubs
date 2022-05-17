@@ -1,22 +1,9 @@
 const path = require('path');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-// module.exports = function (_env, argv) {
-//     const isProduction = argv.mode === "production";
-//     const isDevelopment = !isProduction;
-
-//     return {
-//         devtool: isDevelopment && "cheap-module-source-map",
-//         entry: "./src/index.js",
-//         output: {
-//             path: path.resolve(__dirname, "dist"),
-//             filename: "assets/js/[name].[contenthash:8].js",
-//             publicPath: "/"
-//         }
-//     };
-// };
 module.exports = {
     mode: 'development',
-    entry: path.resolve(__dirname, 'src/index.js'),
+    entry: path.resolve(__dirname, 'src','index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -32,15 +19,19 @@ module.exports = {
         rules: [
             {
                 test: /\.s[ac]ss$/i,
-                use: [
-                    // Creates `style` nodes from JS strings
-                    "style-loader",
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
-                ],
-            },
+                use: ["style-loader","css-loader","sass-loader"],
+                include: path.resolve(__dirname, 'src'),
+            }, 
+            {
+                test: /\.(js|jsx)$/,
+                use: ["babel-loader"],
+                exclude: /node_modules/,
+            }
         ],
     },
+    plugins: [
+        new HtmlWebPackPlugin({
+            template: "./src/index.html",
+        })
+    ]
 };

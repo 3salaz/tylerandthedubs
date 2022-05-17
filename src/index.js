@@ -7,8 +7,12 @@ import './style/master.scss';
 // import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-
-
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import App from './App';
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
 
 // Setup Keys
 const firebaseConfig = {
