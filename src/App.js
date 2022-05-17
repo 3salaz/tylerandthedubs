@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function App() {
+export default function App() {
     return(
         <div>
-            <h1>Welcome, today is { new Date().toDateString }</h1>
+            <h1>Welcome, today is </h1>
         </div>
     );
 
