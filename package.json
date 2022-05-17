@@ -14,7 +14,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
