@@ -20,7 +20,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader","css-loader","sass-loader"],
-                include: path.resolve(__dirname, 'src'),
+                include: path.resolve(__dirname, './src'),
             }, 
             {
                 test: /\.(js|jsx)$/,

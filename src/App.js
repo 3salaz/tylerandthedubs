@@ -1,10 +1,13 @@
 import React from 'react';
+import Layout from "./components/Layout/Layout";
 
-export default function App() {
+function App() {
     return(
-        <div>
-            <h1>Welcome, today is </h1>
-        </div>
+        <>
+            <Layout>
+            </Layout>
+        </>
     );
 
 }; 
+export default App;

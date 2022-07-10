@@ -1,9 +1,9 @@
 // userScripts
-import consoleTest from './consoleTest';
+// import consoleTest from './consoleTest';
 // testingFirebase
 import { initializeApp } from "firebase/app";
 // sassStyles
-import './style/master.scss';
+import './sass/master.scss';
 // import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -24,7 +24,6 @@ const firebaseConfig = {
   appId: "1:606356471271:web:6c42fd5afa872529295142"
 };
 
-console.log(consoleTest('word'));
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

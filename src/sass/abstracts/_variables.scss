@@ -1,0 +1,29 @@
+$base-font-1: 'Alef', sans-serif;
+$base-font-2: 'PT Serif', serif;
+$base-warriors-1: #1d428a;
+$base-warriors-2: #ffc72c;
+$border-dark: rgba($base-warriors-2, 0.88);
+
+$grid__cols: 12;
+
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 992;
+$grid__bp-xl: 1200;
+
+
+$map-grid-props: (
+    "-sm": 0,
+    "-md": $grid__bp-md,
+    "-lg": $grid__bp-lg,
+);
+
+$map-grid-props: (
+    "": 0,
+    "-sm": $grid__bp-sm,
+    "-md": $grid__bp-md,
+    "-lg": $grid__bp-lg,
+    "-xl": $grid__bp-xl,
+);
+
+
